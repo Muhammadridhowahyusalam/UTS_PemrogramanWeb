@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <h2 class="logo">Porto<span>folio</span></h2>
+            <ul>
+                <li><a href="#">Beranda</a></li>
+                <li><a href="#">Tentang</a></li>
+                <li><a href="#">Pengalaman</a></li>
+                <li><a href="#">Kontak</a></li>
+            </ul>
+            <div class="btn">Welcome</div>
+        </nav>
+        <div class="content">
+            <h4>Hello! Nama saya</h4>
+            <h1>Muhammad <span>Ridho</span></h1>
+            <h3>Saya adalah seorang mahasiswa</h3>
+            <div class="news">
+                <form action="">
+                    <input type="email" name="email" elacholder="masukan email kamu" id=""mail>
+                    <input type="submit" value="Masuk" name="Submit"> 
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="about">
+        <div class="main">
+            <img src="img/bg2.jpg" alt="">
+            <div class="about-text">
+                <h2>Tentang</h2>
+                <h5>Maha<Span>siswa</Span></h5>
+                <p>Selamat datang di website portofolio saya, perkenalkan saya Muhammad Ridho Wahyu Salam ,YAAA! meskipun dihalaman depan kalian sudah melihat nama saya. Saya adalah seorang mahasiswa yang ingin berusaha lebih baik. Diwebsite portofolio saya ini merupakan tempat berbagi pengalaman dan pengetahuan saya. Melalui proyek-proyek yang bersangkutan dengan Teknik Informatika, Saya akan berusaha untuk belajar lebih giat lagi di bidang Teknik Informatika.</p>
+                <button type="button">AYO BERTANYA!</button>
+            </div>
+        </div>
+    </div>
+    <div class="service">
+        <div class="tittle">
+            <h2>Pengalaman</h2>
+        </div>
+        <div class="box">
+            <div class="card">
+                <i class="fa-solid fa-bars"></i>
+                <h5> Website Development</h5>
+                    <div class="pra">
+                        <p>Mengerjakan jasa web termasuk dari keahlian saya</p>
+                        <p style="text-align: center;"></p>
+                        <a href="#" class="button">Selengkapnya</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <i class="fa-regular fa-user"></i>
+                    <h5> Website Berabagi Pengalaman</h5>
+                        <div class="pra">
+                            <p>Bisa berbagi/bercerita pengalaman di website portofolio ini
+                            <p style="text-align: center;"></p>
+                            <a href="#" class="button">Selengkapnya</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-desktop"></i>
+                        <h5> Android Development</h5>
+                            <div class="pra">
+                                <p>Saya juga ahli dalam bidang android Development</p>
+                                <p style="text-align: center;"></p>
+                                <a href="#" class="button">Selengkapnya</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kontak-saya">
+                    <p>Lihat lebih jauh tentang saya</p>
+                    <a href="#"class="button-dua">Hubungi kami</a>
+                </div>
+                <footer>
+                    <p>Muhammad Ridho Wahyu Salam</p>
+                    <p>Untuk lebih mengenal saya hubungi</p>
+                    <div class="sosial">
+                        <a href="https://www.facebook.com/awkerad.awkerad.7"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="http://wa.me/+62895383214557"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/mhmdrid04._/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <p class="end"></div></p>
+            </footer>
+            <div class="comment-form">
+                <h2>Formulir Komentar</h2>
+                <form action="#" method="post">
+                  <div class="form-group">
+                    <label for="nama" style="color:#fff;">Nama:</label>
+                    <input type="text" id="nama" name="nama" required />
+                  </div>
+                  <div class="form-group">
+                    <label for="email" style="color:#fff;">Email:</label>
+                    <input type="email" id="email" name="email" required />
+                  </div>
+                  <div class="form-group">
+                    <label for="komentar" style="color:#fff;"
+                    >Komentar:</label>
+                    <textarea id="komentar" name="komentar" required></textarea>
+                  </div>
+                  <button type="button" class="submit-button" onclick="submitKomentar()">
+                    Kirim Komentar
+                  </button>
+                </form>
+              </div>
+              <script>
+                function submitKomentar() {
+                  var nama = document.getElementById("nama").value;
+                  var email = document.getElementById("email").value;
+                  var komentar = document.getElementById("komentar").value;
+          
+                  // Anda bisa melakukan tindakan lebih lanjut dengan data yang dikumpulkan, seperti mengirimkannya ke server.
+                  // Untuk sekarang, kita akan menampilkan pemberitahuan dengan informasi yang dikumpulkan.
+                  alert(
+                    "Nama: " + nama + "\nEmail: " + email + "\nKomentar: " + komentar
+                  );
+                }
+              </script>
+
+</body> 
+</html>

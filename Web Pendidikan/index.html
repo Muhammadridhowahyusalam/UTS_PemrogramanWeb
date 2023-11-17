@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>WEB PENDIDIKAN</h1>
+    <div class="img-container" style="text-align: center;">
+        <img src="https://ugm.ac.id/wp-content/uploads/2020/05/30052015908119991304134619.jpg" alt="Education Image">
+    </div>
+    <h2><b>Pembelajaran Online</b></h2>
+
+    <p>Konsep pendidikan tradisional telah berubah secara radikal dalam beberapa tahun terakhir. Hadir secara fisik di ruang kelas bukan satu-satunya pilihan belajar lagi setidaknya tidak dengan munculnya internet dan teknologi baru. Saat ini, Anda memiliki akses ke pendidikan yang berkualitas kapanpun dan dimanapun Anda inginkan, selama Anda bisa online. Kami sekarang memasuki era baru revolusi pendidikan online.</p>
+
+    <p>Namun, itu bukan alasan yang cukup untuk menghindar dari alternatif ini, yang telah terbukti valid dan bermanfaat bagi banyak siswa. <b>Menurut survei terbaru dari Babson Survey Research Group</b>, lebih dari 30 persen mahasiswa pendidikan tinggi di Amerika Serikat mengambil setidaknya satu kursus jarak jauh. Pendidikan online adalah pilihan yang masuk akal apakah Anda seorang remaja atau orang dewasa. Sebagai siswa, ini bisa menjadi metode pembelajaran yang berguna untuk mengasah keterampilan Anda dalam mata pelajaran yang sulit, atau mempelajari keterampilan baru.</p>
+
+    <h2><b>Ada beberapa alasan anda harus mengikuti Pembelajaran Online</b></h2>
+    <ul>
+        <li>Fleksibel</li>
+        <li>Menawarkan berbagai pilihan program</li>
+        <li>Dapat diakses dengan mudah</li>
+        <li>Memungkinkan pengalaman belajar yang disesuaikan</li>
+        <li>Lebih hemat biaya</li>
+    </ul>
+    <p>Berikut ada beberapa rekomendasi website untuk belajar online <a href="https://www.dewaweb.com/blog/situs-belajar-online/">Klik disini</a></p>
+    </form>
+    <div class="comment-form">
+        <h2>Formulir Komentar</h2>
+        <form action="#" method="post">
+          <div class="form-group">
+            <label for="nama" style="color:#fff;">Nama:</label>
+            <input type="text" id="nama" name="nama" required />
+          </div>
+          <div class="form-group">
+            <label for="email" style="color:#fff;">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="komentar" style="color:#fff;"
+            >Komentar:</label>
+            <textarea id="komentar" name="komentar" required></textarea>
+          </div>
+          <button type="button" class="submit-button" onclick="submitKomentar()">
+            Kirim Komentar
+          </button>
+        </form>
+      </div>
+      <script>
+        function submitKomentar() {
+          var nama = document.getElementById("nama").value;
+          var email = document.getElementById("email").value;
+          var komentar = document.getElementById("komentar").value;
+  
+          // Anda bisa melakukan tindakan lebih lanjut dengan data yang dikumpulkan, seperti mengirimkannya ke server.
+          // Untuk sekarang, kita akan menampilkan pemberitahuan dengan informasi yang dikumpulkan.
+          alert(
+            "Nama: " + nama + "\nEmail: " + email + "\nKomentar: " + komentar
+          );
+        }
+      </script>
+</body>
+</html>
